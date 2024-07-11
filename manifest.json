@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "Facebook AD Remover",
+	"version": "1.0",
+	"description": "Remove Facebook ADs from your feed.",
+	"permissions": ["activeTab", "scripting"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.facebook.com/*"],
+			"js": ["content.js"]
+		}
+	]
+}
